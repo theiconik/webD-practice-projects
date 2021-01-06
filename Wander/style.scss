@@ -1,0 +1,42 @@
+$font :"Poppins";
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: font, sans-serif;
+}
+
+.showcase{
+   position: absolute;
+   right: 0;
+   width: 100%;
+   min-height: 100vh;
+   padding: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: black;
+   color: white;
+   z-index: 2;
+}
+
+.showcase header{
+
+}
+
+.toggle{
+   position: relative;
+   width: 60px;
+   height: 60px;
+   background-image: url(https://i.ibb.co/HrfVRcx/menu.png);
+   background-repeat: no-repeat;
+   background-size: 30px;
+   background-position: center;
+   cursor: pointer;
+}
+
+
+.menu{
+   
+}
