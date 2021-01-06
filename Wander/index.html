@@ -37,9 +37,21 @@
       </div>
 
       <ul class="social">
-        <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt="" /></a></li>
-        <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt="" /></a></li>
-        <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt="" /></a></li>
+        <li>
+          <a href="#"
+            ><img src="https://i.ibb.co/x7P24fL/facebook.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""
+          /></a>
+        </li>
       </ul>
     </section>
 
@@ -52,5 +64,15 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
+
+    <script>
+      const menuToggle= document.querySelector('.toggle')
+      const showcase= document.querySelector('.showcase')
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+      })
+    </script>
   </body>
 </html>
