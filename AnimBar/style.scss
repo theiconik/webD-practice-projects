@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+$primary: #b6b6b6;
+$secondary: #ececec;
+$tprimary: #23232e;
+$tsecondary: #141418;
+
+* {
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+}
+
+hr {
+  height: 3px;
+  color: #df49a6;
+  background-color: #df49a6;
+  border: none;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+  h1 {
+    font-family: "Pacifico";
+    font-size: 1.8rem;
+  }
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: $tsecondary;
+  transition: width 200ms ease;
+  &:hover {
+    width: 16rem;
+    .link-text {
+      display: block;
+    }
+  }
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item {
+  width: 100%;
+  &:last-child {
+    margin-top: 41vh;
+  }
+
+  &:first-child {
+    background-color: $tprimary;
+  }
+  padding-left: 2.3rem;
+  transition: width 200ms;
+  &:hover {
+    background-color: $tprimary;
+    width: 13.7rem;
+    i {
+      filter: grayscale(0%) opacity(1);
+      background-color: $tprimary;
+      color: #df49a6;
+    }
+  }
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  text-decoration: none;
+}
+
+i {
+  color: #df49a6;
+  filter: grayscale(100%) opacity(0.7);
+  min-width: 2rem;
+  //margin: 0 1.5rem;
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+  color: $primary;
+}
+
+.logo {
+  .isecondary {
+    display: none;
+  }
+  svg{
+     padding-right: 8px;
+  }
+  .link-text {
+    font-weight: 500;
+    margin-right: 30px;
+    font-family: "Pacifico";
+    letter-spacing: 0.3ch;
+    font-size: 1.5rem;
+  }
+  margin-bottom: 1rem;
+  text-align: center;
+  color: $primary;
+  background-color: $tprimary;
+  width: 100%;
+  transition: 600ms;
+  i {
+    padding-left: 1.4rem;
+  }
+  &:hover {
+    .iprimary {
+      display: none;
+    }
+    .isecondary {
+      display: block;
+    }
+  }
+}
+
+
+
+
+
