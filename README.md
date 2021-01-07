@@ -7,3 +7,6 @@ This project is simply a template for the homepage of a travel website and the g
 
 <h2>2. AnimBar</h2>
 A super cool looking navigation sidebar using HTML, CSS (Sass) and also using Sass module implementation. So in case you only need, sidebar CSS code there's a Sass module for it named as "_animbar.scss".  
+
+![Screen Recording (08-01-2021 03-47-45)](https://user-images.githubusercontent.com/52995399/103951670-25a43f80-5165-11eb-804e-59348f89d4a8.gif)
+
