@@ -1,0 +1,59 @@
+//Awesome Form Container
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba($color: #000000, $alpha: 0.25),
+    0 10px 10px rgba($color: #000000, $alpha: 0.22);
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  width: 768px;
+  max-height: 650px;
+
+  .form-container {
+    form {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 0 50px;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    input {
+      background: #eee;
+      border: none;
+      padding: 12px 15px;
+      margin: 8px 0;
+      width: 100%;
+    }
+
+    button {
+      border-radius: 20px;
+      border: 1px solid #ff4b2b;
+      background: #ff4b2b;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 12px 45px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: transform 80ms ease-in;
+
+      &.ghost {
+        background: transparent;
+        border-color: #fff;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
