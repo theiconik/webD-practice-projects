@@ -1,0 +1,31 @@
+//Animation
+
+//Move signin to the right
+.container.right-panel-active .sign-in-container{
+   transform: translateX(100%);
+}
+
+//Move overlay to left
+.container.right-panel-active .overlay-container{
+   transform: translateX(-100%);
+}
+
+//Bring sign up over signin
+.container.right-panel-active .sign-up-container{
+   transform: translateX(100%);
+   opacity: 1;
+   z-index: 5;
+} 
+
+//Move overlay back to right
+.container.right-panel-active .overlay{
+   transform: translateX(50%);
+}
+
+.container.right-panel-active .overlay-left{
+   transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right{
+   transform: translateX(20%);
+}
