@@ -3,11 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 
-@import '_form-container';
-@import 'social-icons-bar';
-@import 'madeinIndiafooter';
-
-
 * {
   box-sizing: border-box;
 }
@@ -44,6 +39,11 @@ body {
     text-decoration: none;
     margin: 15px 0;
   }
+
+  @import '_form-container';
+  @import 'social-icons-bar';
 }
+
+@import 'madeinIndiafooter';
 
 
