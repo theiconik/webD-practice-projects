@@ -10,3 +10,9 @@ A super cool looking navigation sidebar using HTML, CSS (Sass) and also using Sa
 
 ![Screen Recording (08-01-2021 03-47-45)](https://user-images.githubusercontent.com/52995399/103951670-25a43f80-5165-11eb-804e-59348f89d4a8.gif)
 
+<h2>2. Sai-inUp</h2>
+A Sassy looking SignIn/SignUp page made using mostly Sass (ofcourse, HTML) and a very little bit of JavaScript. Basically the difficult part is to create the layout of this project and understanding the logic behind the animation. Here's how it looks!
+
+![Screen Recording (10-01-2021 03-47-27)](https://user-images.githubusercontent.com/52995399/104109717-bb230900-52f6-11eb-96cf-4d0e5cfb58d6.gif)
+
+
