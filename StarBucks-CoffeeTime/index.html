@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>StarBucks- Coffee Time</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarBucks- Coffee Time</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="starbucks.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section>
+       <div class="circle"></div>
       <header>
-         <a href="#"><img src="logo.png" class="logo"></a>
-         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">What's new</a></li>
-            <li><a href="#">Contact Us</a></li>
-         </ul>
+        <a href="#"><img src="logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's new</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
       </header>
-   </section>
-</body>
+      <div class="content">
+        <div class="textBox">
+          <h2>It's not just Coffee<br/></h2><h2>It's<span> Starbucks</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            consequuntur eum harum enim nam optio quas soluta aut amet et,
+            mollitia vitae laborum rem consequatur nesciunt omnis excepturi modi
+            laboriosam.
+          </p>
+          <br>
+          <a href="#">Want to know more?</a>
+        </div>
+        <div class="imgBox">
+          <img src="img1.png" class="starbucks" />
+        </div>
+      </div>
+      <ul class="thumb">
+         <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+         <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+         <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+      </ul>
+      <ul class="sci">
+         <li><a href="#"><img src="facebook.png"></a></li>
+         <li><a href="#"><img src="twitter.png"></a></li>
+         <li><a href="#"><img src="instagram.png"></a></li>
+      </ul>
+    </section>
+    <script src="main.js"></script>
+  </body>
 </html>
