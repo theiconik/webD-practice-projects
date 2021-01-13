@@ -1,6 +1,9 @@
+//Importing and Setting variables
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
-$f: "Santana Black";
+$f: "Montserrat";
+
+//Main layout and design
 
 * {
   margin: 0;
@@ -88,86 +91,205 @@ header {
       line-height: 1.7rem;
     }
 
-    a{
-       text-decoration: none;
-       font-size: 0.9rem;
-       font-weight: 500;
-       border: #017143 2px solid;
-       border-radius: 20px;
-       color: #017143;
-       padding: 8px 15px;
-       transition: 200ms ease-in-out;
-       &:hover{
-         background-color: #017143;
-         color: white;
-       }
+    a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: #017143 2px solid;
+      border-radius: 20px;
+      color: #017143;
+      padding: 8px 15px;
+      transition: 200ms ease-in-out;
+      &:hover {
+        background-color: #017143;
+        color: white;
+      }
     }
 
-    .imgbox{
-       width: 600px;
-       display: flex;
-       justify-content: flex-end;
-       padding-right: 50px;
-       margin-top: 50px;
+    .imgbox {
+      width: 600px;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 50px;
+      margin-top: 50px;
 
-       img{
-         max-width: 340px; 
-       }
+      img {
+        max-width: 340px;
+      }
     }
   }
 }
 
-.thumb{
-   position: absolute;
-   left: 50%;
-   bottom: 20px;
-   transform: translateX(-50%);
-   display: flex;
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
 
-   li{
-      list-style: none;
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      transform: translateY(-15px);
+    }
+
+    img {
+      max-width: 50px;
+    }
+  }
+}
+
+.sci {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  li {
+    list-style: none;
+    a {
       display: inline-block;
-      margin: 0 20px;
-      cursor: pointer;
-      transition: 0.5s;
-
-      &:hover{
-         transform: translateY(-15px);
-      }
-
-      img{
-         max-width: 50px;
-      }
-   }
+      margin: 10px 0;
+      transform: scale(0.6);
+      filter: invert(1);
+    }
+  }
 }
 
-.sci{
-   position: absolute;
-   top: 50%;
-   right: 30px;
-   transform: translateY(-50%);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #017143;
+  clip-path: circle(750px at right 950px);
+}
 
-   li{
-      list-style: none;
+//Responsive Design
+
+@media (max-width: 991px) {
+  header {
+    padding: 20px;
+    .logo {
+      position: relative;
+      max-width: 60px;
+    }
+    ul {
+      display: none;
+    }
+  }
+
+  section {
+    padding: 20px 20px 120px;
+
+    .content {
+      flex-direction: column;
+      margin-top: 100px;
+
+      .imgbox {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .textBox {
+        max-width: 100%;
+        margin-bottom: 10px;
+        h2,
+        span {
+          font-size: 2.2rem;
+        }
+
+        a {
+          font-size: 0.7rem;
+        }
+
+        p {
+          margin-top: 15px;
+          font-size: 1rem;
+          line-height: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .starbucks{
+    max-width: 300px;
+  }
+
+  .thumb li img{
+    max-width: 40px;
+  }
+
+  .sci{
+    background: #017143;
+    right: 0;
+    width: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .circle {
+    clip-path: circle(400px at center bottom);
+  }
+
+  .toggle{
+    position: relative;
+    width: 24px;
+    height: 25px;
+    cursor: pointer;
+    background: url('menu.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(29%) sepia(51%) saturate(1248%) hue-rotate(117deg) brightness(96%) contrast(99%);
+    z-index: 11;
+    transition: 0.3s ease-in-out;
+  }
+
+  .toggle.active{
+    position: fixed;
+    right: 20px;
+    background: url('close.png');
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(140deg) brightness(102%) contrast(101%);
+  }
+
+  .navigation{
+    transition: 0.3s ease-in-out;
+  }
+
+  .navigation.active{
+    bottom: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #017143;
+    z-index: 10;
+
+    li{
       a{
-         display: inline-block;
-         margin: 10px 0;
-         transform: scale(0.6);
-         filter: invert(1);
+        font-size: 1.5rem;
+        color: white;
+        margin: 8px;
       }
-   }
-}
-
-.circle{
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background: #017143;
-   clip-path:  circle(750px at right 950px); 
+    }
+  }
 }
