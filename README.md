@@ -15,4 +15,10 @@ A Sassy looking SignIn/SignUp page made using mostly Sass (ofcourse, HTML) and a
 
 ![Screen Recording (10-01-2021 03-47-27)](https://user-images.githubusercontent.com/52995399/104109717-bb230900-52f6-11eb-96cf-4d0e5cfb58d6.gif)
 
+<h2>3. Starbucks-CoffeeTime</h2>
+A clean and awesome aesthetic landing page for Starbucks. Also this project is responsive, and yes you know what, Starbucks was coming to my city (Kanpur) while i was making this page, so I mailed them that you can use my design to kind off message out the people of Kanpur, that you have finally got setup in the city! Just kidding, I didn't do that!
+
+![Screen Recording (13-01-2021 22-53-26)](https://user-images.githubusercontent.com/52995399/104487097-a98d7a00-55f2-11eb-9ffa-d561ce4bb8a2.gif)
+
+
 
