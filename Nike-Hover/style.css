@@ -114,3 +114,37 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+@media (max-width: 991px){
+   .card{
+      width: auto;
+      max-width: 350px;
+      align-items: flex-start;
+   }
+   .card:hover{
+      height: 600px;
+   }
+   .card .content{
+      width: 100%;
+      left: 0;
+      padding: 30px;
+   }
+   .card:hover img{
+      top: 78%;
+      left: 60%;
+      width: 450px;
+      height: 470px;
+   }
+}
+
+@media (max-width: 420px){
+   .card .content{
+      padding: 20px;
+   }
+   .card:hover img{
+      top: 70%;
+      left: 55%;
+      width: 310px;
+      height: 350px;
+   }
+}
