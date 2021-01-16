@@ -20,5 +20,11 @@ A clean and awesome aesthetic landing page for Starbucks. Also this project is r
 
 ![Screen Recording (13-01-2021 22-53-26)](https://user-images.githubusercontent.com/52995399/104487097-a98d7a00-55f2-11eb-9ffa-d561ce4bb8a2.gif)
 
+<h2>4. Nike-Hover</h2>
+Basically, a very very minimal website but pretty cool card animation which can be used for giving details about a product, when hovered over it as I have done. So, as the name suggests the product name is Hover (Studs) by Nike.
+
+![Screen Recording (15-01-2021 22-56-39)](https://user-images.githubusercontent.com/52995399/104758995-3e27e180-5785-11eb-8a17-7d027ae6a303.gif)
+
+
 
 
