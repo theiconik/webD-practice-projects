@@ -3,8 +3,29 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+   color: #426696;
+   font-weight: 600;
+   font-size: 3rem;
+   opacity: 0.8;
+}
+
+h2,p{
+   color: #658ec6;
+   font-weight: 500;
+   opacity: 0.8;
+}
+
+h3{
+   color: #426696;
+   font-weight: 600;
+   opacity: 0.8;
 }
 
 @import 'main';
 @import 'glass';
-@import 'circles'
+@import 'circles';
+@import 'dashboard'
