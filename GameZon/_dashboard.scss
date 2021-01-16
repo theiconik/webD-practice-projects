@@ -1,0 +1,67 @@
+// Profile area
+
+.dashboard {
+  flex: 0.7;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 15px;
+}
+
+.user img{
+   margin-top: 30px;
+   border-radius: 50%;
+   width: 5rem;
+   height: 5rem;
+}
+
+
+.link{
+   display: flex;
+   align-items: center;
+   text-align: center;
+   transform: scale(0.75);
+   margin: 1.5rem 2.5rem;
+
+   h2{
+      font-size: 20px;
+      padding: 0rem 1.5rem;
+   }
+}
+
+.pro{
+   background: linear-gradient(to right top, #E55D87, #5FC3E4);
+   margin-bottom: 20px;
+   transform: scale(0.85);
+   border-radius: 15px;
+   padding: 1.5rem;
+   position: relative;
+   
+   h2{
+      width: 50%;
+      color: white; 
+      font-weight: 600;
+   }
+   img{
+      position: absolute;
+      top: -2%;
+      right: 2%;
+   }
+}
+
+//Games Info area
+
+.games {
+  flex: 2;
+  transform: scale(0.85);
+}
+
+.status{
+   margin-bottom: 1.5rem;
+}
