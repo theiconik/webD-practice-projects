@@ -34,6 +34,13 @@ So, Glassomorphism UI was quite trending, so @developedbyed came up with this pr
 
 ![gamezon](https://user-images.githubusercontent.com/52995399/104821597-0b541b00-5863-11eb-8226-487600782d49.png)
 
+<h2>6. PfGlass</h2>
+PfGlass, short name for Portfolio Glass! So name says it all! Continuing one more project on Glassomorphism UI, I made a card with my basic intro and added cool animations like moving gradient background and vanilla-tilt. So this mini project is kind animation oriented.
+
+<a href="https://pfglass.netlify.app">PfGlass</a>
+
+![Screen Recording (19-01-2021 00-17-24)](https://user-images.githubusercontent.com/52995399/104953478-7ed56400-59ec-11eb-9812-a473f337f861.gif)
+
 
 
 
