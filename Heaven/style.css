@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+  background: whitesmoke;
+  border-radius: 20px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("nainital.jpg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner #text {
+  position: relative;
+  font-size: 12em;
+  color: #fff;
+  position: absolute;
+  transform: translateY(-50px);
+}
+
+.banner .clouds {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.banner .clouds img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  animation: animate calc(3s * var(--i)) linear infinite alternate-reverse;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+section {
+  position: relative;
+  padding: 75px 100px;
+}
+
+section h2 {
+  position: relative;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
