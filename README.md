@@ -47,6 +47,11 @@ Location Courtesy: Nainital. Do visit it's a good place!
 
 ![Screen Recording (20-01-2021 18-12-12)](https://user-images.githubusercontent.com/52995399/105177234-67ad8800-5b4c-11eb-87b3-bd8f8bb56752.gif)
 
+<h2>7. RGB</h2>
+Starting Javascript projects part with this DOM Manipulation based mini project that changes background with a random gradient on a click. That's why name Random Gradient Background (RGB).
+
+![Screen Recording (24-01-2021 18-42-39)](https://user-images.githubusercontent.com/52995399/105631640-6b574c80-5e75-11eb-95ff-1a6bd95c5acd.gif)
+
 
 
 
