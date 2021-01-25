@@ -12,3 +12,8 @@ TweenMax.from('.container span',{
       amount: 10
    }
 })
+
+TweenMax.from('.chakra', 0.5,{
+   opacity: 0,
+   delay:11.5   
+})
