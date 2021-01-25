@@ -18,4 +18,13 @@ section{
    position: relative;
    width: 100%;
    height: 100vh;
+   display: flex;
+}
+
+.container span{
+   width: 0.5vw;
+   height: 100%;
+   background: #fff;
+   border-top: 33.333vh solid #ff9933;
+   border-bottom: 33.333vh solid #138808;
 }
