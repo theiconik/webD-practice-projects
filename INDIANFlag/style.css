@@ -28,3 +28,22 @@ section{
    border-top: 33.333vh solid #ff9933;
    border-bottom: 33.333vh solid #138808;
 }
+
+.chakra{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   z-index: 1000;
+   max-height: 34vh;
+   animation: animate 24s linear infinite;
+}
+
+@keyframes animate{
+   0%{
+      transform: translate(-50%, -50%) rotate(0deg) ;
+   }
+
+   100%{
+      transform: translate(-50%, -50%) rotate(360deg) ;
+   }
+}
