@@ -52,6 +52,9 @@ Starting Javascript projects part with this DOM Manipulation based mini project 
 
 ![Screen Recording (24-01-2021 18-42-39)](https://user-images.githubusercontent.com/52995399/105631640-6b574c80-5e75-11eb-95ff-1a6bd95c5acd.gif)
 
+<h2> 8. INDIANFlag</h2>
+As the name says, it's basically my country, INDIA's flag. So it was our Republic Day, so I was kind of checking out GSap and tried to make this pretty cool intro animation of the Indian flag on the website. 
+
 
 
 
