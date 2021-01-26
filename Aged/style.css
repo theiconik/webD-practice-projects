@@ -1,0 +1,34 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  width: 50%;
+}
+
+.btn{
+  margin-right: 1.5rem;
+}
+
+.collection{
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+
+
+
