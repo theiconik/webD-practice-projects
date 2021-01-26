@@ -25,8 +25,10 @@ body {
 
 .collection{
   text-align: center;
+}
+
+h5{
   font-weight: 500;
-  font-size: 1.5rem;
 }
 
 
