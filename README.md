@@ -32,7 +32,7 @@ So, Glassomorphism UI was quite trending, so @developedbyed came up with this pr
 
 <a href="https://gamezon.netlify.app">GameZon</a>
 
-![gamezon](https://user-images.githubusercontent.com/52995399/104821597-0b541b00-5863-11eb-8226-487600782d49.png)
+![Webp net-resizeimage](https://user-images.githubusercontent.com/52995399/105741540-6c18dd00-5f60-11eb-8b8c-1a675898e2f3.png)
 
 <h2>6. PfGlass</h2>
 PfGlass, short name for Portfolio Glass! So name says it all! Continuing one more project on Glassomorphism UI, I made a card with my basic intro and added cool animations like moving gradient background and vanilla-tilt. So this mini project is kind animation oriented.
@@ -51,6 +51,9 @@ Location Courtesy: Nainital. Do visit it's a good place!
 Starting Javascript projects part with this DOM Manipulation based mini project that changes background with a random gradient on a click. That's why name Random Gradient Background (RGB).
 
 ![Screen Recording (24-01-2021 18-42-39)](https://user-images.githubusercontent.com/52995399/105631640-6b574c80-5e75-11eb-95ff-1a6bd95c5acd.gif)
+
+<h2> 8. INDIANFlag</h2>
+As the name says, it's basically my country, INDIA's flag. So it was our Republic Day, so I was kind of checking out GSap and tried to make this pretty cool intro animation of the Indian flag on the website. 
 
 
 
