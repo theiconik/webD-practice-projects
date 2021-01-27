@@ -3,3 +3,41 @@
 *{
    font-family: 'Poppins',sans-serif;
 }
+
+body{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   height: 90vh;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+h2{
+   font-weight: 500;
+   padding: 7.5px 15px;
+   border: 2px solid black;
+   border-radius: 15px;
+}
+
+.options{
+   display: flex;
+   align-items: center;
+}
+
+.options img{
+   padding: 20px;
+   transition: all 0.5s ease-in-out;
+}
+
+.options img:hover{
+   position: relative;
+   top:-5px;
+   box-shadow: 0 5px 20px rgba(0,0,0,0.35)
+}
+
