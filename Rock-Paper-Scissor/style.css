@@ -44,6 +44,14 @@ h2{
    box-shadow: 0 5px 20px rgba(0,0,0,0.35)
 }
 
+.options img:active {
+   transform: scale(0.95);
+ }
+
+ .options img:focus {
+   outline: none;
+ }
+
 h4{
    color: white;
 }
