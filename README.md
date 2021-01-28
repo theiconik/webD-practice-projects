@@ -55,6 +55,15 @@ Starting Javascript projects part with this DOM Manipulation based mini project 
 <h2> 8. INDIANFlag</h2>
 As the name says, it's basically my country, INDIA's flag. So it was our Republic Day, so I was kind of checking out GSap and tried to make this pretty cool intro animation of the Indian flag on the website. 
 
+<h2> 9. Aged</h2>
+This is just a simple JS web app which simply tells you how many days you have survived after taking user's birth year as the input. I know it's super easy but I was thinking of trying Materialize CSS Framework, so built this easy project using that!
 
+![Screen Recording (28-01-2021 21-58-30)](https://user-images.githubusercontent.com/52995399/106168555-6a475780-61b4-11eb-8451-410583459a54.gif)
+
+<h2> 10. Rock-Paper-Scissor</h2>
+Yeah, name says it all! It's that our famous nostalgic game we used to play when we didn't have internet and we used to go to school.
+<a href="pkkgame.netlify.app">PKK Game</a>
+
+![Screen Recording (28-01-2021 21-59-57)](https://user-images.githubusercontent.com/52995399/106168562-6c111b00-61b4-11eb-8bcb-e72e0dec8f17.gif)
 
 
