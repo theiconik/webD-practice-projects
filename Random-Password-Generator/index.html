@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Random Password Generator</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://www.flaticon.com/svg/vstatic/svg/1000/1000966.svg?token=exp=1611942692~hmac=fe944abeaf01a598596fe886aee97e5d"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
       <h2 class="title">Random Password Generator</h2>
       <div class="password" id="password"></div>
-      <button class="generate" id="generate">Generate</button>
-   </div>
-   <script src="main.js"></script>
-</body>
+      <div class="buttons">
+         <button class="generate" id="generate" onclick="generatePwd()">
+            Generate
+          </button>
+          <button class="reset" id="reset" onclick="reset()">Reset</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
