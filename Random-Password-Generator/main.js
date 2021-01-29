@@ -1,4 +1,5 @@
 var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*_?:";
+var op= document.getElementById("password");
 
 function generatePwd() {
   var pwdl = 16;
@@ -6,6 +7,9 @@ function generatePwd() {
   for (var i = 0; i < pwdl; i++) {
     password = password + chars[Math.floor(Math.random() * chars.length)];
   }
-  var op= document.getElementById("password");
   op.innerHTML= password;
+}
+
+function reset(){
+   op.innerHTML = "";
 }
