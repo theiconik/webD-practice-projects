@@ -1,0 +1,48 @@
+*{
+   font-family: 'Consolas', sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100vw;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   transform: scale(1.2);
+}
+
+.password{
+   width: 375px;
+   height: 40px;
+   margin: 10px 0;
+   border: 1px solid rgb(24, 23, 23);
+   border-radius: 10px;
+   /* padding: 3px 6px; */
+   padding-top: 6px;
+   padding-left: 9px;
+}
+
+.generate{
+   padding: 5px 8px;
+   background: rgb(66, 66, 66);
+   color: white;
+   border: none;
+   outline: none;
+   border-radius: 7.5px;
+   transition: all 0.5s ease-out;
+}
+
+.generate:active{
+   background: purple;
+   transform: scale(0.95);
+}
