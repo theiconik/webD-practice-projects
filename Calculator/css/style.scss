@@ -60,7 +60,7 @@ main{
       margin-top: 20px;
    }
 
-   button{
+   button,span{
       @include shadow;
       width: 60px;
       height: 60px;
@@ -74,7 +74,13 @@ main{
       }
       &:active{
          @include shadow-inset;
+         transform: translateY(1.2px);
       }
+   }
+
+   i{
+      color: rgb(216, 74, 18);
+      transform: translateY(17px) translateX(20px);
    }
 
    .op__key, .eq__key{
