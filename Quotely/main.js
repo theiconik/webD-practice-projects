@@ -1,10 +1,10 @@
 //Identifiers
 
-const quoteContainer = document.getElementById("quote-container");
-const quoteText = document.getElementById("quote");
-const author = document.getElementById("author");
-const twitterBtn = document.getElementById("twitter");
-const newQuoteBtn = document.getElementById("new-quote");
+const quoteContainer = document.getElementById('quote-container');
+const quoteText = document.getElementById('quote');
+const authorText = document.getElementById('author');
+const twitterBtn = document.getElementById('twitter');
+const newQuoteBtn = document.getElementById('new-quote');
 
 // Get Quote from API
 
@@ -16,6 +16,8 @@ async function getQuote() {
     const response = await fetch(apiUrl);
     const data = await response.json();
     console.log(data);
+    authorText.innerText = data.quoteAuthor;
+    quoteText.innerText = data.quoteText;
   } catch (error) {
     getQuote();
     console.log("Error:", error);
