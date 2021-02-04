@@ -80,14 +80,19 @@ button:active {
    color: #38a1f3;
 }
 
+.loader {
+   opacity: 0.5;
+}
+
 /*Media Query*/
 
 @media screen and (max-width: 1000px) {
   .quote-container {
     margin: auto 10px;
+    transform: scale(0.75);
   }
 
   .quote-text {
-    font-size: 1.75 rem;
+    font-size: 1.5rem;
   }
 }
