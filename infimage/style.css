@@ -63,6 +63,7 @@ h1{
    width: 100%;
    margin-top: 25px;
    border: solid whitesmoke 3px;
+   cursor: pointer;
 }
 
 /*Media Query*/
