@@ -1,6 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap");
 
-*{
-   box-sizing: border-box;
-   padding: 0;
-   margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Molle", cursive;
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: whitesmoke;
+}
+
+h1{
+   text-align: center;
+   margin: 25px 0px;
+   font-size: 40px;
 }
