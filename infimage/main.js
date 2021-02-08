@@ -3,13 +3,27 @@
 const imageContainer = document.getElementById("image-container");
 const loader = document.getElementById("loader");
 
+let ready = false;
+let imagesLoaded = 0;
+let totalImages = 0;
 let photosArray = [];
 
 //Unspalsh API
 
-const count = 10;
+const count = 30;
 const apiKey = "P2HyhJrkkfrAIJuoIJJYMabQ7LWkg0rDglmIwXfHOnc";
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&orientation=landscape`;
+
+//Check if all images are loaded
+
+function imageLoaded() {
+   imagesLoaded++;
+   console.log(imagesLoaded);
+   if(imagesLoaded === totalImages) {
+      ready = true;
+      console.log('ready =', ready);
+   }
+}
 
 // Helper Function to Set Attributes on DOM Elements
 
@@ -22,6 +36,10 @@ function setAttributes (element , attributes) {
 // Create Elements for Links & Photos, Add to DOM
 
 function displayPhotos() {
+   
+   imagesLoaded = 0;
+   totalImages = photosArray.length;
+   console.log('total images', totalImages);
    photosArray.forEach((photo) => {
       // Create <a> to link to Unsplash
       const item = document.createElement('a');
@@ -45,24 +63,37 @@ function displayPhotos() {
          title : photo.alt_description,
       });
 
+      //Event Listener, check when each is finished loading
+      img.addEventListener('load', imageLoaded);
+
       //Put <img> inside <a> then put both inside imageContainer Element
       item.appendChild(img);
       imageContainer.appendChild(img);
    });
 }
 
-//Get photos from Unspalsh API
+//Get photos from Unsplash API
 
 async function getPhotos(){
    try {
       const response = await fetch(apiUrl);
       photosArray = await response.json();
-      console.log(photosArray);
+      //console.log(photosArray);
       displayPhotos();
    } catch (error) {
       // Catch Error Here
    }
 }
+
+//Check to see if scrolling near bottom of page, Load More Photos
+
+window.addEventListener('scroll', () => {
+   if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && ready) {
+      console.log('load more');
+      ready = false;
+      getPhotos();
+   }
+});
 
 //On load
 getPhotos();
