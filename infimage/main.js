@@ -10,7 +10,7 @@ let photosArray = [];
 
 //Unspalsh API
 
-const count = 30;
+const count = 20;
 const apiKey = "P2HyhJrkkfrAIJuoIJJYMabQ7LWkg0rDglmIwXfHOnc";
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&orientation=landscape`;
 
@@ -22,6 +22,7 @@ function imageLoaded() {
    if(imagesLoaded === totalImages) {
       ready = true;
       console.log('ready =', ready);
+      loader.hidden = true; 
    }
 }
 
