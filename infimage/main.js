@@ -12,7 +12,7 @@ let photosArray = [];
 
 const count = 20;
 const apiKey = "P2HyhJrkkfrAIJuoIJJYMabQ7LWkg0rDglmIwXfHOnc";
-const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&orientation=landscape`;
+const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&orientation=portrait`;
 
 //Check if all images are loaded
 
