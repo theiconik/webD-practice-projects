@@ -24,12 +24,19 @@ const VoiceRSS={speech:function(e){this._validate(e),this._request(e)},_validate
 
 async function getJokes() {
    
-   const apiUrl = 'https://v2.jokeapi.dev/joke/Miscellaneous,Dark,Pun,Spooky?blacklistFlags=religious,racist';
+   let joke = '';
+   const apiUrl = 'https://sv443.net/jokeapi/v2/joke/Miscellaneous,Dark,Pun,Spooky?blacklistFlags=religious,racist';
    
    try {
       const response = await fetch(apiUrl);
-      const data = response.json();
-      console.log(data.joke);
+      const data = await response.json();
+      if(data.setup) {
+         joke = `${data.setup} ... ${data.delivery}`;
+      } else {
+         joke = data.joke;
+      }
+      console.log(joke);
+
    } catch(error) {
       console.log('whoops', error);
    }
