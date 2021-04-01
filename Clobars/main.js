@@ -6,9 +6,9 @@ toggle.onclick = () => {
   sidebar.classList.toggle("active");
 };
 
-document.onclick = (event) => {
-  if (event.target.id !== "sidebar" && event.target.id !== "toggle") {
-    toggle.classList.remove("active");
-    sidebar.classList.remove("active");
-  }
-};
+// document.onclick = (event) => {
+//   if (event.target.id !== "sidebar" && event.target.id !== "toggle") {
+//     toggle.classList.remove("active");
+//     sidebar.classList.remove("active");
+//   }
+// };
