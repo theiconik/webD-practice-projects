@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Clobars</title>
+   <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Code -->
+   <div class="hamburger hamburger--emphatic" id="toggle">
+      <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
+      </div>
+    </div>
+   <div class="sidebar" id="sidebar">
+      <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Portfolio</a></li>
+         <li><a href="#">Pricing</a></li>
+         <li><a href="#">Blog</a></li>
+         <li><a href="#">Contact Us</a></li>
+      </ul>
+   </div>
+
+   <!-- Scripts -->
+   <script class="hamburgerfunc">
+      /**
+       * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+       *
+       * @private
+       * @author Todd Motto
+       * @link https://github.com/toddmotto/foreach
+       * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+       * @callback requestCallback      callback   - Callback function for each iteration.
+       * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+       * @returns {}
+       */
+        var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+    
+        var hamburgers = document.querySelectorAll(".hamburger");
+        if (hamburgers.length > 0) {
+          forEach(hamburgers, function(hamburger) {
+            hamburger.addEventListener("click", function() {
+              this.classList.toggle("is-active");
+            }, false);
+          });
+        }
+      </script>
+   <script src="main.js"></script>
+</body>
+</html>
