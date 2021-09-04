@@ -38,8 +38,28 @@ main {
    justify-content: space-between;
    align-items: center;
    width: 50%;
-   padding: 7px 15px;
+   padding: 15px 22px;
    background-color: white;
-   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
    font-weight: 500;
+   border-radius: 10px;
+   margin: 7px 0px;
+}
+
+.row:last-child{
+   margin-bottom: 75px;
+}
+
+.state{
+   font-weight: 600;
+}
+
+footer {
+   margin-top: 35px;
+   margin-bottom: 25px;
+   color: rgb(102, 101, 101)
+}
+
+.heart {
+   color: rgb(97, 97, 200);
 }
